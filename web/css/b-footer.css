@@ -1,0 +1,21 @@
+.footer { height: 99px; max-width: 1260px; min-width: 1000px; margin: 0 auto; background: url(../i/footer_bg_top.gif) repeat-x left top #eeeeee; padding: 8px 0 0; position: relative; z-index: 9; }
+.footer-line-light { background: #eee; padding: 0 30px 0 60px; max-width: 1260px; min-width: 1000px; margin: 0 auto; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.footer-line-dark { background: #e6e6e6; border-top: 1px solid #fff; border-bottom: 1px solid #fff; }
+.footer-line-dark-inn { padding: 0 30px 0 60px; max-width: 1260px; min-width: 1000px; margin: 0 auto; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.footer-nav { float: right; height: 49px; width: 300px; padding: 0 0 0 0px; }
+.footer-text {background:#eee; height:48px;  margin:0 300px 0 0; padding:0 20px 0 0;}
+.footer-text-a { color: #999; line-height: 15px; margin: 0 12px 0 0; font-weight: bolder; }
+.footer-text-a2 { color: #348fab; line-height: 15px; margin: 0 12px 0 0; font-weight: bolder; }
+.footer-text-m { float: left; line-height: 15px; padding: 19px 0 0 19px; }
+.footer-feedback { background: url(../i/contact-us-btn-bg.gif) repeat-x 0 0; display: block; float: left; margin: 16px 0 0; cursor: pointer; text-decoration: none; color: #fff; height: 24px; border-left: solid 1px #41677e; border-right: solid 1px #41677e; }
+.footer-feedback-s1 { background: url(../i/fw_ico_arrow.gif) no-repeat 0 bottom; display: block; padding: 3px 5px 0 5px; height: 26px; }
+.footer-feedback-s2 { display: inline-block; border-bottom: 1px dotted White; line-height: 12px; margin: 1px 0 0; }
+.footer-fav { float: left; font-size: 0; line-height: 0; padding: 19px 0 0; }
+.footer-fav-a { font-weight: normal; margin: 0 3px 0 7px; line-height: 0px; }
+.footer-r-link { background: #e0e0e0; float: right; height: 48px; width: 300px; padding: 0 0 0 0px; }
+.footer-r-link-ul { background: url(../i/fr_ico.gif) no-repeat right 23px; list-style-type: none; margin: 0px; padding: 17px 12px 0 7px; display: block; float: left; }
+.footer-r-link-li { margin: 0 0 0 10px; padding: 0; display: inline; font-size: 11px; color: #969696; }
+.footer-r-link-li-a { background: url(../i/fr_ico.gif) no-repeat 0px 5px; padding: 0 0 0 12px; color: #969696; }
+.footer-r-link-li-b { color: #666; }
+.footer-counters { float: left; padding: 19px 0 0 15px; }
+.footer-copyright { color: #999; height: 48px; line-height: 48px; padding: 0 20px 0 0; margin: 0 300px 0 0; }

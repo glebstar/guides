@@ -1,0 +1,115 @@
+/* body {background:#fff url(../i/px.gif) no-repeat; background-attachment: fixed;} */
+textarea {overflow:auto}
+
+#search .search .field input {height:14px;}
+#countries {zoom:1;}
+
+#pp-country {width:250px;}
+#pp-country h1 img, #country h1 img {margin-top:4px;}
+#pp-country h1 {width:210px; overflow:hidden;}
+#pp-country .content {padding-top:7px;}
+
+.residents .all {margin:11px 0 0;}
+.residents .all2 {margin:10px 0 0;}
+
+.photo-upload .info,
+.reg-tab .item,
+.user-profile,
+.community-profile,
+.user-photo,
+.user-photoalbum,
+.photo-upload,
+.info .editing,
+.info .place {zoom:1;}
+.info .place .btn {margin-top:2px;}
+.photos-list .scrollable .last {width:97px;}
+
+.user-photos-thumb {zoom:1; padding-bottom:15px;}
+.user-photoalbum .more {display:inline-block;}
+
+.comment-block .message .photo .descript {bottom:-1px;}
+.lenta-status .status-submit input { margin: 0 0 0 -65px; }
+#country .submenu { margin: -1px 0 0 !important; }
+
+.num {top:-4px;}
+h1 .num {top:-7px;}
+#header.head-user .auth .num {top:0px;}
+
+#pp-photo-full .photo .prevnext {top:15px;}
+
+.cu_line .prev{top:0px}
+.cu_line .next{top:0px}
+
+.rates .item .jquery-radio{position:relative;top:1px;}
+
+.pagination .npwrap,
+.pagination .pages {display:inline; zoom:1;}
+
+.list_notes .item .bottom .buttons a.re { padding: 0px 10px 4px; }
+.advice-by-item-flag{top: 1px;}
+
+.best-persons-prev,
+.best-persons-next{top:0px}
+.crumbs-line-ava{position: relative;top: 2px;}
+.place-travelers-type{height:11px;padding:5px 0px 0px 0px;}
+
+/* b-last-elements.css */
+.last-elements-prev,
+.last-elements-next{top: -3px;}
+
+/* b-konkurs-2.css */
+.konkurs-test-answer-text{padding: 2px 0 12px;}
+
+/* b-list-collections.css */
+.list-collections-prev,
+.list-collections-next{top: -3px;}
+.list-collections-num{line-height: 12px;}
+
+/* b-pop-collect.css */
+.pop-collect-num{line-height: 12px;}
+
+.right-btn {top:8px;}
+
+/* b-album-photos.css */
+.album-photos-item,
+.album-photos-blank,
+.album-photos-edit,
+.album-photos-edit-place
+{zoom:1;}
+.album-photos-edit-place-btn {margin-top:2px;}
+
+/* b-where-i-was.css */
+.where-i-was-stat-num-img{margin: 2px 2px 0 0;}
+
+/* b-pop-city.css */
+.pop-city-check {padding-top: 2px;}
+
+.user-side-pink-link {background:url(../i/user-side-pink-link.png) no-repeat left 9px;}
+
+/* b-list-notes.css */
+.list-notes-bottom,.list-notes-top{zoom:1;}
+
+/* b-excurs-tour.css */
+.excurs-tours{zoom:1;}
+
+/* b-place-visited.css */
+.place-visited-gray {padding:5px 0 15px 10px;zoom:1;}
+.place-visited-gray-2{zoom:1;}
+
+/* b-pop-place.css */
+.pop-place-country-flag{position: static;}
+
+/* b-list-excurs.css */
+.list-excurs-imgs{zoom:1;}
+.list-excurs-photo{display:inline;}
+
+
+/* b-place-promo.css */
+.place-promo-a { background: none; border-bottom: 1px dashed #1d82a2; }
+
+
+/* b-place-promo.css */
+.new-photos-head-num { top: -10px; }
+
+.standart-popup-white-tbl, .standart-popup-gray-tbl {width:97%;}
+.tb_frm-sel {width:130px;}

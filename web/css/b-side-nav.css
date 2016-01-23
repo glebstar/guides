@@ -1,0 +1,27 @@
+.side-nav {padding: 0 0 10px 20px; margin: -2px 0 0; }
+.side-nav-ul { margin: 0; list-style-type: none; padding: 0; }
+.side-nav-li { font-size: 12px; line-height: 22px; color: #aaa; }
+.side-nav-li-ttl { font-size: 20px; line-height: 34px; font-family: 'apercu_pro'; font-weight: bolder; padding: 9px 0 12px 0; color: #666; }
+.side-nav-li-ttl:first-child { border-top: 0; padding-top: 5px;}
+.side-nav-li-a { color: #666; }
+.side-nav-li-a:hover { color: Black; }
+.side-nav-li-a-red { background: transparent url(../i/toolbar-arrow-rr.png) no-repeat 0 13%; color: #e33232; font-weight: bolder; margin-left: -10px; padding-left: 10px; }
+.side-nav-li-a-dotted { color: #666; text-decoration: none !important; display: inline-block; line-height: 13px; }
+.side-nav-li-bubble { margin: 5px 0 7px -10px; font-size: 11px; line-height: 18px; }
+.side-nav-li-bubble2 { width: 60%; }
+.side-nav-li-bubble-img { margin: 0 0 -1px 15px; }
+.side-nav-li-bubble-inn { border: 1px solid #dedede; border-radius: 2px; padding: 7px 10px; color: #aaa; }
+.side-nav-li-bubble-a { color: #aaa; }
+.side-nav-li-bubble-a-dot_h { color: #666; font-size: 12px; line-height: 12px; display: inline-block; text-decoration: none !important; margin: 3px 0 4px; border-bottom: 1px dotted White; }
+.side-nav-li-bubble-a-dot_h:hover { border-bottom: 1px dotted #666; }
+.side-nav-li-bubble-inn2 { padding: 0 0 5px 10px; color: #aaa; display: none; }
+.side-nav-li-bubble-inn2 .side-nav-li-bubble-a:hover { color: #ff4e05; }
+
+.side-nav-auth { height: 60px; background: #ebebeb; padding: 20px 0 0 20px; margin: 23px 0 7px -20px; }
+.side-nav-auth-keys { background: url(../i/login-keys.png) 0 50% no-repeat; padding-left: 49px; font-size: 12px; line-height: 19px; height: 40px; }
+.side-nav-auth-login { display: inline-block; color: #348fab; background: url(../i/dotted-348fab.png) 0 15px repeat-x; text-decoration: none; }
+.side-nav-auth-reg { display: inline-block; color: #999; background: url(../i/dotted_999.gif) 0 15px repeat-x; text-decoration: none; }
+.side-nav-auth-login:hover,
+.side-nav-auth-reg:hover { text-decoration: none; }
+
+.side-nav-li-a-nw::after { background: url(../i/ico-cat.png) no-repeat 0 0; content: ""; display: inline-block; height: 9px; margin: 0 0 0 5px; width: 10px; }

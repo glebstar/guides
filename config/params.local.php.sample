@@ -1,0 +1,5 @@
+<?php
+
+return [
+    'rutravellerHost' => 'http://www.rutraveler.ru.db0.ru'
+];

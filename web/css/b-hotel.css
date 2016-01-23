@@ -1,0 +1,12 @@
+.hotel_img_wrap { display: block; float: left; margin-right: 15px; }
+a.hotel_descr_ttl { display: block; font-size: 15px; font-family: 'apercu_pro'; font-weight: bold; margin-bottom: 5px; color: #3488b2; }
+p.hotel_descr_place { color: #999; margin-bottom: 12px; }
+.hotel_price { font-family: 'apercu_pro'; font-weight: bold; font-size: 15px; }
+a.hotel_descr_choose_link { font-family: 'apercu_pro'; text-transform: uppercase; font-weight: lighter; font-size: 10px; color: #00a550; border: 1px solid #00a550; padding: 5px 7px; display: inline-block; border-radius: 2px; margin-top: 12px; }
+.hotel_descr_choose_link:hover{ text-decoration: none; }
+.hotel { display: block; border-bottom: 1px solid #ddd; padding-bottom: 15px; overflow: hidden; margin: 0 0 15px; }
+.hotel:last-child{ border: none; }
+.hotel-site-pic { display: block; float: left; margin: 0 1px 1px 0; }
+.hotel-site-pics-bot { border-bottom: 1px solid #e5e5e5; font-size: 12px; line-height: 14px; margin-right: 5px; padding: 15px 0; }
+
+

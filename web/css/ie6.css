@@ -1,0 +1,137 @@
+body {background:#fff url(../i/px.gif) no-repeat; background-attachment: fixed;}
+textarea {overflow:auto}
+
+#container,#footer {width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":"auto")}
+#content .wrap,#country .wrap,#footer .wrap,#search .wrap,#ie-warning .wrap {width:expression((document.documentElement.clientWidth||document.body.clientWidth)>920?"920px":"auto")}
+#content .wrap2 {width:expression((document.documentElement.clientWidth||document.body.clientWidth)>902?"902px":"auto")}
+#message .wrap {width:expression((document.documentElement.clientWidth||document.body.clientWidth)>890?"890px":"auto")}
+#header .wrap, div.header-user .wrap {width:expression((document.documentElement.clientWidth||document.body.clientWidth)>970?"970px":"auto")}
+#container {height:100%}
+
+#topmenu td,
+.submenu li {border-width: expression(this.previousSibling==null ?'0' :'1px');}
+
+#search .search .field input,
+#footer .search .field input {height:14px;}
+#search .search .add-menu li,#search .search .add-menu li a,
+#footer .search .add-menu li,#footer .search .add-menu li a {zoom:1;}
+
+#overlay, #overlay_status, #overlay_white {
+     position: absolute; left:0;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+#pp-photo {
+     position: absolute; left:0;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+	 width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":"auto");
+}
+#pp-country {width:250px;}
+#pp-country h1 img, #country h1 img {margin-top:4px;}
+#pp-country h1 {width:210px; overflow:hidden;}
+#pp-country .content {padding-top:7px;}
+
+#country .col ins {display:none;}
+#countries {zoom:1;}
+#countries .items {height:21px;}
+
+.residents .items a {margin:0 4px 4px 0;}
+.residents .all {margin:11px 0 0;}
+.residents .all2 {margin:10px 0 0;}
+
+.blog-block .photo .arrow {position:relative; top:2px;}
+.user a.ava span.hover {background-image:none;}
+.jquery-radio img {background-image:url(../i/radio.gif);}
+.photo-block .voting li div {padding:7px 8px 5px 8px;}
+.photo-block .photo .prev,
+.photo-block .photo .next {height:expression(this.parentNode.offsetHeight);}
+
+.user-profile .photos,
+.items,
+.items-empty,
+.photo-week .leaders,
+.photo-upload .info,
+.lenta-block,
+.reg-tab .item,
+.popup .content,
+.user-multiedit,
+.user-multiedit .helptext,
+.user-photos-type,
+.user-profile,
+.community-profile,
+.user-photo,
+.user-photoalbum,
+.previews-wrap,
+.photo-upload,
+.info .editing,
+.info .place {zoom:1;}
+.info .place .btn {margin-top:2px; margin-right:5px;}
+.info input.text {width:99% !important;}
+.info textarea {width:99%;}
+
+.crumbs h1 ins {position:static;}
+
+.photos-list .scrollable {height:175px;}
+.photos-list .scrollable .last {width:97px;}
+
+.user-photos-thumb {zoom:1; padding-bottom:15px;}
+.user-photoalbum .more {display:inline-block;}
+
+.comment-block .message .photo .descript {bottom:-1px;}
+.comment-block .message .photo .descript span {padding:0 4px 0 5px;}
+.reply-block .avatar {display:inline; margin-right:-3px;}
+.reply-block .rp {margin-left:-3px;}
+.lenta-status .status-submit { margin: 0 -97px 0 0; }
+.lenta-status .status-submit input { margin: 0 0 0 -65px; }
+
+.num {top:-4px;}
+h1 .num {top:-7px;}
+#header.head-user .auth .num {left:-9px;}
+
+.add_note .note_edit .scroll .picture{margin-right: 0px;}
+.slides .top .nav{padding-right: 4px;}
+
+#pp-photo-full .photo .prevnext {top:15px;}
+
+#header.head-new .search-new .field div{padding-top: 1px;}
+
+.pagination .npwrap,
+.pagination .pages {display:inline; zoom:1;}
+
+.promo-steps-num{display: inline;}
+.advice-by-item-flag{top: 1px;}
+.advice-most-item-flag{padding-right: 6px;}
+.advice-most-question-arrow {left: -5px;top: -5px;}
+#footer .adv-text .feedback_we {width:98px;}
+
+.photo-country-plus{padding: 2px 0px 0px 0px;}
+.crumbs-line-ava{position: relative;top: 2px;}
+.place-travelers-type{height:11px;padding:5px 0px 0px 0px;}
+
+.place-most-rate-link{margin: 0px 0px 0px 5px;}
+
+/* b-last-elements.css */ 
+.last-elements-prev,
+.last-elements-next{top: 10px;}
+.last-elements-name{height: 26px;}
+
+/* b-konkurs-2.css */
+.konkurs-test-answer-text{padding: 2px 0 12px;}
+
+.right-btn {top:8px;}
+
+/* b-pop-city.css */
+.pop-city-check {padding-top: 2px;}
+
+.cool-places-bottom-link {background:url(../i/what-visit-bottom-link.png) no-repeat right 14px;}
+
+/* b-new-photos.css */
+.new-photos-item-b,
+.new-photos-item-m,
+.new-photos-item-m-2{display: inline;}
+
+/* b-list-notes.css */
+.list-notes-bottom,.list-notes-top{zoom:1;}
+
+/* b-list-excurs.css */
+.list-excurs-imgs{zoom:1;}
+.list-excurs-photo{display:inline;}

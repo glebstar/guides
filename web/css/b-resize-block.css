@@ -1,0 +1,12 @@
+.resize-block{ position: fixed; top: 65px; right: 50%; margin: 0 -792px 0 0; border: 1px solid #d3d3d3; background: #FFF; padding: 15px; font-size: 12px; line-height: 16px; text-align: center; z-index: 55; }
+
+@media screen and (max-width: 1260px) {
+	.resize-block {right: 10px; margin: 0;}
+}
+.resize-block-hidden-col-left { margin: 0 20px 0 0; overflow: hidden; }
+.resize-block-hidden-col-left-inn { width: 205px; }
+
+
+@media only screen and (max-width: 1024px) {
+	.resize-block {display: none;}
+}
