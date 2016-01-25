@@ -64,10 +64,27 @@ class User extends ActiveRecord
 
     public static function getCurrentGuideId()
     {
-        $tblGuide = new User();
-        $guide = $tblGuide->getCurrentGuide();
-
+        $guide = self::getCurrentGuide();
         return $guide['id'];
+    }
+
+    public static function getCurrentUserId()
+    {
+        $guide = self::getCurrentGuide();
+        return $guide['user_id'];
+    }
+
+    public static function getPhotoFolder() {
+        $guide = self::getCurrentGuide();
+
+        $firstLetter = strtolower($guide['info_full']['nick']{0});
+        if (strlen($guide['info_full']['nick']) == 1) {
+            $secondLetter = "_";
+        } else {
+            $secondLetter = strtolower($guide['info_full']['nick']{1});
+        }
+
+        return "u_{$firstLetter}/{$secondLetter}/{$guide['info_full']['nick']}";
     }
 
     public static function getAvaUrl($w=165, $h=165)
@@ -78,14 +95,7 @@ class User extends ActiveRecord
             return Yii::$app->params['rutravellerHost'] . "/icache/not_ava/1_{$w}x{$h}.jpg";
         }
 
-        $firstLetter = strtolower($guide['info_full']['nick']{0});
-        if (strlen($guide['info_full']['nick']) == 1) {
-            $secondLetter = "_";
-        } else {
-            $secondLetter = strtolower($guide['info_full']['nick']{1});
-        }
-
-        $path = "u_{$firstLetter}/{$secondLetter}/{$guide['info_full']['nick']}";
+        $path = self::getPhotoFolder();
 
         return Yii::$app->params['rutravellerHost'] . "/icache/{$path}/ava/{$guide['info_full']['rt_user_avatar_id']}_{$w}x{$h}.jpg";
     }

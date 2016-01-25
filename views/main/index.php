@@ -2,6 +2,11 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use app\models\rt\Photo;
+use app\assets\MainAsset;
+use app\components\widgets\modal\Message;
+
+MainAsset::register($this);
 
 $this->title = 'Индивидуальный гид ' . $guide['info_full']['rt_name'];
 
@@ -23,7 +28,7 @@ $this->title = 'Индивидуальный гид ' . $guide['info_full']['rt_
             <div class="club-user-card-about-loc">Специализация гида: самые мистические места Кипра</div>
         </div>
         <div><img src="/i/px.gif" height="15" alt="" /></div>
-        <a href="#" class="club-user-card-btn3">Написать ему</a><br />
+        <a href="#" class="club-user-card-btn3 show-message-popup">Написать ему</a><br />
         <a href="#" class="club-user-card-btn3">Забронировать экскурсию</a>
     </div>
 </div>
@@ -58,17 +63,10 @@ $this->title = 'Индивидуальный гид ' . $guide['info_full']['rt_
     <h2 class="page-ttl-h2">Фотографии гида</h2>
 </div>
 <div class="hotel-site-pics clearfix">
-    <a class="hotel-site-pic" href="#"><img src="images/pic99.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic100.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic101.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic99.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic100.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic101.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic99.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic100.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic101.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic99.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic100.jpg" alt=""></a>
-    <a class="hotel-site-pic" href="#"><img src="images/pic101.jpg" alt=""></a>
+    <? foreach($photos as $_p): ?>
+    <a class="hotel-site-pic" href="#"><img src="<?=Photo::getPhotoUrl($_p['album_id'], $_p['body_id'], $_p['ext'], 130, 130); ?>" alt=""></a>
+    <? endforeach; ?>
 </div>
 <div class="hotel-site-pics-bot f14"><a class="bold red f12" href="#">Все фотографии гида</a> &rarr;
+
+<?=Message::widget(); ?>
