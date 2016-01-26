@@ -11,6 +11,8 @@ use app\models\rt\Photo;
 
 class MainController extends WebAppController
 {
+    public $enableCsrfValidation = false;
+
     public function actions()
     {
         return [
@@ -30,4 +32,29 @@ class MainController extends WebAppController
         ]);
     }
 
+    public function actionAddmessage()
+    {
+        Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        $data = [
+            'status' => 'OK',
+            'message' => ''
+        ];
+
+        $request = Yii::$app->request;
+
+        $message = $request->post('message');
+        if(!$message) {
+            $data['status'] = 'Err';
+            $data['message'] = 'не введен текст сообщения!';
+
+            return $data;
+        }
+
+        $tblMessage = new \app\models\rt\guide\Message();
+        $tblMessage->guide_id = User::getCurrentGuideId();
+        $tblMessage->user_text = $message;
+        $tblMessage->save();
+
+        return $data;
+    }
 }

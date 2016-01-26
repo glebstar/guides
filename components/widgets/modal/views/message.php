@@ -11,6 +11,7 @@ ModalMessageAsset::register($this);
         <div class="pp-message-content">
             <div class="pp-message-title"><span class="pp-message-close"></span>Написать сообщение</div>
             <div class="pp-message-wrap">
+                <!--
                 <table class="pp-message-tbl">
                     <tr class="pp-message-str">
                         <td class="pp-message-cell pp-message-cell-ava">
@@ -24,7 +25,8 @@ ModalMessageAsset::register($this);
                         </td>
                     </tr>
                 </table>
-                <textarea cols="30" rows="10" class=""></textarea>
+                -->
+                <textarea cols="30" rows="10" class="pp-mesage-text"></textarea>
             </div>
             <div class="pp-message-sent">Ваше сообщение <br />
                 <span class="pp-message-sent-username"></span> отправлено</div>
