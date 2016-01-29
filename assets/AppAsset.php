@@ -27,7 +27,8 @@ class AppAsset extends AssetBundle
         'css/b-header-alter.css',
         'css/b-club-user-card.css',
         'css/b-hotel.css',
-        'css/b-index-alter.css'
+        'css/b-index-alter.css',
+        'css/popup.css'
     ];
 
     public $js = [
@@ -35,7 +36,8 @@ class AppAsset extends AssetBundle
         'js/b-datepicker2.js',
         'js/b-resize-block.js',
         'js/init.js',
-        'js/b-footer.js'
+        'js/b-footer.js',
+        'js/messages.js'
     ];
 
     public $jsOptions = ['position' => \yii\web\View::POS_HEAD];

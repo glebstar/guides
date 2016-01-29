@@ -4,6 +4,6 @@ return [
     'class' => 'yii\db\Connection',
     'dsn' => 'pgsql:host=192.168.150.202;dbname=rutraveler;port=5432',
     'username' => 'rutraveler_web',
-    'password' => 'rutraveler_webadmin',
+    'password' => '',
     'charset' => 'utf8',
 ];

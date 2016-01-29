@@ -1,0 +1,19 @@
+.pp-exc-ord { width: 550px; }
+.pp-exc-ord-ttl { line-height: 20px; font-size: 13px; font-weight: bold; font-family: 'apercu_pro'; color: Black; margin: 0 0 10px; }
+.pp-exc-ord-d { border: 1px solid #d2d2d2; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; border-radius: 2px; display: table-cell; width: 250px; position: relative; padding: 5px; height: 28px; line-height: 15px; vertical-align: top; }
+.pp-exc-ord-d2 { border: 1px solid #d2d2d2; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; border-radius: 2px; display: table-cell; width: 100px; position: relative; padding: 5px; height: 28px; line-height: 15px; vertical-align: top; }
+.pp-exc-ord-d3 { border: 1px solid #d2d2d2; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; border-radius: 2px; display: table-cell; width: 150px; position: relative; padding: 5px; height: 28px; line-height: 15px; vertical-align: top; }
+.pp-exc-ord-d-s { line-height: 12px; display: inline-block; position: relative; top: 1px; color: #888; }
+.pp-exc-ord-sep { display: table-cell; width: 10px; }
+.pp-exc-ord-d-a { display: block; height: 16px; width: 16px; text-decoration: none !important; position: absolute; top: 4px; right: 5px; background: url(/i/ico-filf14-list-act.png) no-repeat center; }
+.pp-exc-ord-d-inp { border: 0; height: 16px; padding: 0 20px 0 0; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.pp-exc-ord-d-inp2 { border: 0; height: 16px; padding: 0; width: 110px; }
+.pp-exc-ord-d-inp3 { border: 0; height: 16px; padding: 0; width: 85px; }
+.pp-exc-ord-textarea { border: 1px solid #d2d2d2; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; border-radius: 2px; padding: 5px; }
+.pp-exc-ord .m-placeholder { color: Red !important; }
+.pp-exc-ord-ul { background: White; border: 1px solid #ebebeb; box-shadow: 0 7px 7px #ccc; display: none; left: -1px; margin: 0; max-height: 250px; min-width: 100%; overflow-y: scroll; padding: 0; position: absolute; top: 26px; z-index: 55; }
+.pp-exc-ord-li { border-bottom: 1px solid #ebebeb; display: block; font-size: 12px; line-height: 28px; list-style-type: none; }
+.pp-exc-ord-li a { border-bottom: 1px solid #ebebeb; display: block; padding: 0 10px; }
+
+.pp-exc-ord-clickhere { background: url(/i/pp-exc-ord-clickhere.png) no-repeat center; display: block; height: 60px; width: 133px; text-decoration: none !important; position: fixed; bottom: 50px; color: White; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 7px 0 0 65px; text-transform: uppercase; margin: 0 0 0 -153px; }
+.pp-exc-ord-clickhere-s { display: inline; border-bottom: 1px dotted White; font-size: 11px; line-height: 15px; }

@@ -5,6 +5,7 @@ use yii\helpers\Html;
 use app\models\rt\Photo;
 use app\assets\MainAsset;
 use app\components\widgets\modal\Message;
+use app\components\widgets\modal\OrderExc;
 
 MainAsset::register($this);
 
@@ -28,8 +29,8 @@ $this->title = 'Индивидуальный гид ' . $guide['info_full']['rt_
             <div class="club-user-card-about-loc">Специализация гида: самые мистические места Кипра</div>
         </div>
         <div><img src="/i/px.gif" height="15" alt="" /></div>
-        <a href="#" class="club-user-card-btn3 show-message-popup">Написать ему</a><br />
-        <a href="#" class="club-user-card-btn3">Забронировать экскурсию</a>
+        <a href="javascript:void(0);" class="club-user-card-btn3 show-message-popup">Написать ему</a><br />
+        <a href="javascript:void(0);" class="club-user-card-btn3 show-order-exc-popup">Забронировать экскурсию</a>
     </div>
 </div>
 
@@ -70,3 +71,4 @@ $this->title = 'Индивидуальный гид ' . $guide['info_full']['rt_
 <div class="hotel-site-pics-bot f14"><a class="bold red f12" href="#">Все фотографии гида</a> &rarr;
 
 <?=Message::widget(); ?>
+<?=OrderExc::widget(); ?>

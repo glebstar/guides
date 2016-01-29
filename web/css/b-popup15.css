@@ -1,0 +1,99 @@
+.popup15 { background: White; position: absolute; z-index: 51; display: none; width: 450px; box-shadow: 0 0 10px #999; }
+.popup15-ttl { line-height: 20px; font-size: 15px; font-weight: bold; font-family: 'apercu_pro'; color: Black; margin: 0 0 15px; padding: 10px 20px 0; }
+.popup15-ttl-x { float: right; display: block; height: 16px; width: 16px; background: url(../i/x8.png) no-repeat center; cursor: pointer; margin: 3px 0 0; }
+.popup15-cont { padding: 0 20px 15px; font-size: 12px; line-height: 16px; }
+.popup15-center { text-align: center; padding: 10px; }
+.popup15-overflow500 { height: 500px; overflow-y: scroll; }
+
+.popup15-submit { background: #ebebeb; padding: 15px 20px; font-family: apercu_pro; position: relative; }
+.popup15-submit a { display: inline-block; text-decoration: none !important; }
+.popup15-submit-btn-cancel { background: #ebebeb; border: 1px solid #bbb; border-radius: 2px; color: #999; font-size: 10px; line-height: 15px; padding: 6px 10px; text-transform: uppercase; }
+.popup15-submit-btn-cancel:hover { background: #e33232; color: White; border: 1px solid #e33232; }
+.popup15-submit-btn-green { background: #05b400; border-radius: 2px; color: White; font-size: 10px; line-height: 15px; padding: 7px 10px; text-transform: uppercase; }
+.popup15-submit-btn-red22 { background: #d33232; border-radius: 2px; color: White; font-size: 10px; line-height: 15px; padding: 7px 10px; text-transform: uppercase; }
+.popup15-submit-hint { background: #ffffe0; border: 1px solid #bbb; border-radius: 3px; font-size: 11px; line-height: 15px; padding: 7px 10px; box-shadow: 0 0 10px #ccc; left: 100%; top: 0; position: absolute; white-space: nowrap; margin: 5px 0 0 -10px; display: none; }
+.popup15-submit-btn-white { background: White; border: 1px solid #05b400; border-radius: 2px; color: #05b400; font-size: 10px; line-height: 15px; padding: 6px 10px; text-transform: uppercase; }
+.popup15-submit-btn-white:hover { background: #05b400; border: 1px solid #05b400; color: White; }
+
+.popup15-inp100p { border: 1px solid #bbb; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; border-radius: 2px; font-size: 12px; padding: 4px 5px; }
+.popup15-inp100p-red.m-placeholder { color: Red !important; }
+.popup15-textarea100p { border: 1px solid #bbb; width: 100%; height: 100px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; border-radius: 2px; padding: 4px 5px; font-size: 12px; }
+.popup15-cont-p { font-family: apercu_pro; color: Black; font-size: 13px; line-height: 16px; font-weight: bolder; margin: 0 0 5px; }
+.popup15-a-list { background: White url(../i/ico-filf14-list.png) no-repeat center; display: block; height: 16px; position: absolute; right: 5px; text-decoration: none !important; top: 4px; width: 16px; }
+.popup15-a-list_red { background: White url(../i/ico-filf14-list-act.png) no-repeat center; display: block; height: 16px; position: absolute; right: 5px; text-decoration: none !important; top: 4px; width: 16px; }
+.popup15-a-add { background: url(../i/ico_plus_blue.gif) no-repeat 0 center; display: inline-block; text-decoration: none !important; padding: 0 0 0 12px; font-weight: bolder; font-size: 12px; line-height: 16px; }
+
+.popup15-selected { margin: 0; padding: 0; }
+.popup15-selected-li { background: #ebebeb; border-radius: 3px; display: inline-block; height: 22px; line-height: 22px; margin: 0 2px 4px 0; vertical-align: top; }
+.popup15-selected-li-s { border-radius: 3px 0 0 3px; cursor: default; display: inline-block; font-family: apercu_pro; font-size: 9px; height: 22px; letter-spacing: 0.8px; max-width: 135px; overflow: hidden; padding: 0 3px 0 7px; text-overflow: ellipsis; text-transform: uppercase; vertical-align: top; white-space: nowrap; }
+.popup15-selected-li-x { background: #e2e2e2 url(../i/icon-close.png) no-repeat center; border-radius: 0 3px 3px 0; display: inline-block; height: 22px; vertical-align: top; width: 22px; }
+
+.popup15-option { position: absolute; left: 0; top: 24px; border: 1px solid #d2d2d2; background: White; margin: 0; padding: 0; list-style-type: none; display: none; box-shadow: 0 0 10px #ccc; border-radius: 2px; max-height: 200px; overflow-y: auto; min-width: 100%; z-index: 56; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.popup15-option-li { border-bottom: 1px solid #d2d2d2; }
+.popup15-option-li:last-child { border-bottom: 0; }
+.popup15-option-a { padding: 7px 10px; font-size: 12px; line-height: 16px; display: block; color: #666; text-decoration: none; }
+.popup15-option-a:hover { background: #ffffe0; }
+
+.popup15-milti-sel { border-radius: 2px; border: 1px solid #bbb; display: table; width: 100%; box-sizing: border-box; }
+.popup15-milti-sel-d { display: table-cell; height: 23px; line-height: 23px; border-left: 1px solid #bbb; position: relative; box-sizing: border-box; }
+.popup15-milti-sel-d:first-child { border: 0; }
+.popup15-sel-a { position: relative; padding: 0 16px 0 5px; display: block; color: #666; text-decoration: none !important; width: 100%; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; height: 23px; }
+.popup15-sel-a:after { background: url(../i/arrow_down_grey2.gif) no-repeat; position: absolute; top: 10px; right: 10px; height: 3px; width: 5px; content: ""; }
+.popup15-sel-a-act:after { background: url(../i/arrow_up_grey2.gif) no-repeat; }
+
+.popup15-milti-sel-100p { border-radius: 2px; border: 1px solid #bbb; display: block; width: 100%; box-sizing: border-box; }
+.popup15-milti-sel-100p .popup15-milti-sel-d { width: 100%; display: block; }
+
+
+.popup15-sel-100p { border-radius: 2px; border: 1px solid #bbb; box-sizing: border-box; }
+.popup15-sel-100p-d { height: 23px; line-height: 23px; position: relative; box-sizing: border-box; }
+
+
+.popup15-label { display: inline-block; padding: 0 0 0 17px; position: relative; }
+.popup15-label-chk { position: absolute; top: 1px; left: 0; }
+.popup15-label-radio { position: absolute; top: 0; left: 0; }
+
+.popup15-tc { display: table-cell; position: relative; }
+
+/* РєР»Р°СЃСЃС‹ РЅРёР¶Рµ РїРѕРєР° РЅРµ РёСЃРїРѕР»СЊР·СѓСЋС‚СЃСЏ, РєР»Р°СЃСЃС‹ Р±СѓРґСѓ РїРµСЂРµРЅРѕСЃРёС‚СЊСЃСЏ РІС‹С€Рµ РїРѕ РјРµСЂРµ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё */
+.popup15-submit-auto { background: #eee; text-align: center; padding: 5px 10px; color: #888; }
+.popup15-submit-btn { position: relative; top: 12px; width: 150px; background: White; font-family: 'apercu_pro'; border-radius: 2px; color: #348fab; display: block; margin: 12px auto 0; font-size: 10px; line-height: 15px; padding: 6px 10px; text-decoration: none !important; border: 1px solid #348fab; text-transform: uppercase; vertical-align: top; }
+.popup15-submit-btn-back { background: White; font-family: 'apercu_pro'; border-radius: 2px; color: #999; display: inline-block; font-size: 10px; line-height: 15px; padding: 6px 10px; text-decoration: none !important; border: 1px solid #999; text-transform: uppercase; vertical-align: top; margin: 11px 0 0 10px; float: left; }
+.popup15-submit-btn-back-a { background: transparent; font-family: 'apercu_pro'; border-radius: 2px; color: #666; display: inline-block; font-size: 10px; line-height: 15px; padding: 6px 10px; text-decoration: none !important; border: 1px solid transparent; text-transform: uppercase; vertical-align: top; margin: 11px 0 0 10px; float: left; }
+.popup15-submit-btn-red { background: White; font-family: 'apercu_pro'; border-radius: 2px; color: #de27ac; display: inline-block; font-size: 10px; line-height: 15px; padding: 6px 10px; text-decoration: none !important; border: 1px solid #de27ac; text-transform: uppercase; vertical-align: top; margin: 11px 10px 0 0; float: right; }
+.popup15-submit-btn-green-mono { background: #05b400; font-family: 'apercu_pro'; border-radius: 2px; color: White; display: inline-block; font-size: 10px; line-height: 15px; padding: 6px 10px; text-decoration: none !important; text-transform: uppercase; vertical-align: top; margin: 11px 10px 0 0; float: right; }
+.popup15-submit-cancel { color: #348fab; cursor: pointer; display: inline-block; font-size: 12px; line-height: 12px; margin: 20px 14px 0 10px; text-decoration: none !important; float: right; border-bottom: 1px dotted #348fab; }
+.popup15-submit-cancel666 { background: url(../i/dashed_666.gif) repeat-x scroll left bottom; color: #666; cursor: pointer; display: inline-block; font-size: 13px; line-height: 15px; margin: 17px 14px 0 10px; text-decoration: none !important; float: right; }
+.popup15-submit-btn-orange { background: url(../i/rating-resort-btn-orange.png) repeat-x 0 0; color: #fff; display: inline-block; font-size: 14px; line-height: 26px; height: 26px; margin: 11px 0 0; padding: 0 20px; text-transform: uppercase; text-decoration: none !important; border: 1px solid #e48312; text-shadow: 0 -1px 0 #cb2e19; font-family: Tahoma, Arial, sans-serif; text-align: center; }
+.popup15-submit-btn-maroon { background: #AE0045; border-radius: 2px; color: White; font-size: 10px; line-height: 15px; padding: 7px 10px; text-transform: uppercase; }
+.popup15-submit-btn-cnt { float: none; }
+.popup15-submit-reset { background: url(../i/where-i-was-country-del-in.gif) no-repeat 0 4px; font-size: 12px; line-height: 13px; display: inline-block; color: #666; text-decoration: none !important; margin: 0 0 0 8px; padding: 0 0 0 10px; }
+.popup15-submit-reset-s { border-bottom: 1px dotted #666; display: inline-block; }
+
+.popup15-d { width: 135px; display: inline-block; position: relative; }
+.popup15-d input { padding: 5px 20px 5px 5px; }
+.popup15-d:before { background-image: url(../i/calendar.png); display: inline-block; width: 14px; height: 14px; position: absolute; top: 6px; right: 6px; content: ''; }
+.popup15-inp-d { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.popup15-inp-w { margin: 10px; padding-left: 30px; position: relative; }
+.popup15-inp-w input { padding: 5px; box-sizing: border-box; }
+.popup15-inp-w .email-icn { background-image: url(../i/ico-contacts4.png); display: inline-block; width: 24px; height: 24px; position: absolute; left: -3px; top: 0; }
+.popup15-inp-w .tel-icn { background-image: url(../i/ico-contacts2.png); display: inline-block; width: 24px; height: 26px; position: absolute; left: -2px; top: 0; }
+.popup15-inp-w .red { position: absolute; top: 0; left: 20px; }
+.popup15-inp-w .pp-reg-warning { margin: -28px 0 0 383px; display: none; }
+.popup15-inp-w .pp-reg-warning.show { display: block; }
+.popup15-sel100p { border: 1px solid #d3d3d3; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.popup15-label-l { width: 190px; display: inline-block; vertical-align: middle; padding: 0 10px; font-size: 12px; position: relative; }
+.popup15-label-l.fl-r { float: right; text-align: right; }
+.popup15-label-l .pp-reg-warning { margin: -28px 0 0 140px; display: none; }
+.popup15-label-l .pp-reg-warning.show { display: block; }
+.popup15-nobrd { padding: 0; top: 0; left: 0; }
+.popup15-nobrd .popup15-inn { margin: 0; }
+.popup15-dotted { border-bottom: 1px dotted #348fab; text-decoration: none !important; font-size: 12px; line-height: 13px; display: inline-block; }
+.popup15-submit-btn-red2 { background: #de27ac; font-family: 'apercu_pro'; border-radius: 2px; color: White; display: inline-block; font-size: 10px; line-height: 15px; padding: 6px 10px; text-decoration: none !important; text-transform: uppercase; vertical-align: middle; margin: 11px 10px 0 0; float: right; }
+.popup15-submit-btn-red3 { background: White; font-family: 'apercu_pro'; border-radius: 2px; color: #e33232; display: inline-block; font-size: 10px; line-height: 15px; padding: 6px 10px; text-decoration: none !important; border: 1px solid #e33232; text-transform: uppercase; vertical-align: top; margin: 11px 0 0 10px; float: left; }
+.popup15-submit-btn-hover_red:hover  { color: White; border: 1px solid #e33232; background: #e33232; }
+.popup15-submit-btn-hover_green:hover  { color: White; border: 1px solid #05b400; background: #05b400; }
+.popup15-submit-input { width: 200px; border: 1px solid #d3d3d3; font-size: 12px; margin: 14px 0 0 10px; padding: 2px; float: left; }
+.popup15-green .popup15-h3 { background: #2fbd25; }
+.popup15-green .popup15-close-8x8 { background: url(../i/x-white.png) no-repeat center 0; }
+.popup15-cpt { display: inline-block; margin-left: -40px; margin-top: 20px; font-size: 11px; }

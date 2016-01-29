@@ -4,7 +4,7 @@
 .pp-message-title{background:#e03a3a;color:#fff;font-size:11px;font-weight:bold;margin:0 0 1px;padding:7px 10px 7px 10px;text-transform:uppercase}
 .pp-message-close{background:url(/i/pp_close2.gif) no-repeat center;float:right;font-size:0;margin-top:2px;width:11px;height:11px;cursor:pointer}
 .pp-message-submit{background:#eee;height:1%;overflow:hidden;padding:11px 9px 9px;text-align:center;}
-.pp-message-btn{background:url(/i/btn_green.gif) repeat-x 0 0;border:1px solid #05b400;color:#fff;display:inline-block;font-size:14px;line-height:26px;height:26px;margin:0 0 0 14px;padding:0 10px;text-transform:uppercase;text-decoration:none;text-shadow:0 -1px 0 #1caf17}
+.pp-message-btn{background:url(/i/button_red_bg.gif) repeat-x 0 0;border:1px solid #d33232;color:#fff;display:inline-block;font-size:14px;line-height:26px;height:26px;margin:0 0 0 14px;padding:0 10px;text-transform:uppercase;text-decoration:none;text-shadow:0 -1px 0 #d33232}
 .pp-message-wrap{padding: 10px;}
 .pp-message-tbl{width: 100%;}
 .pp-message-str{}

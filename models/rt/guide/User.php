@@ -33,7 +33,8 @@ class User extends ActiveRecord
         }
 
         if(!$userNick) {
-            $userNick = preg_replace('/^(www\.)?(.+)\..+\..+$/', '$2', $request->serverName);
+            //$userNick = preg_replace('/^(www\.)?(.+)\..+\..+$/', '$2', $request->serverName);
+            $userNick = preg_replace('/^(www\.)?([^\.]+)\..+$/', '$2', $request->serverName);
         }
 
         $guide = self::find()
