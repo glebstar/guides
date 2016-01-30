@@ -2,30 +2,40 @@
 use app\assets\ModalOrderExcAsset;
 ModalOrderExcAsset::register($this);
 ?>
-
+<div style="display: none;">
+    <? foreach($countries as $_c): ?>
+        <div id="order-exc-country-<?=$_c['id']; ?>">
+        <? foreach($cities as $_city): ?>
+            <? if($_city['country_id'] == $_c['id']): ?>
+            <li class="pp-exc-ord-li"><a style="cursor:pointer;" data-city-id="<?=$_city['id']; ?>" onclick="excOrderSetCity(this);"><?=$_city['name']; ?></a></li>
+            <? endif; ?>
+        <? endforeach; ?>
+        </div>
+    <? endforeach; ?>
+</div>
 <div class="popup15 pp-exc-ord" id="pp-exc-ord">
     <div class="popup15-ttl"><span class="popup15-ttl-x">&nbsp;</span>Заявка на подбор экскурсии</div>
     <div class="popup15-cont popup15-cont-pd10">
         <p class="pp-exc-ord-ttl">Общая информация</p>
-        <div class="pp-exc-ord-d">
-            <a href="javascript:void(0);" class="pp-exc-ord-d-a" onclick="$(this).siblings('.pp-exc-ord-ul').toggle();">&nbsp;</a>
-            <input disabled="disabled" style="background-color: white" type="text" placeholder="Страна" data-country-id="" value="" class="order-exc-sel-country_id pp-exc-ord-d-inp m-placeholder">
-            <ul class="pp-exc-ord-ul" id="pp-exc-ord-countries" style="display: none;">
-                <li class="pp-exc-ord-li"><a style="cursor:pointer;" data-country-id="1">Россия</a></li>
-                <li class="pp-exc-ord-li"><a style="cursor:pointer;" data-country-id="2">Италия</a></li>
-            </ul>
+        <div id="pp-exc-ord-geo">
+            <div class="pp-exc-ord-d">
+                <a href="javascript:void(0);" class="pp-exc-ord-d-a" onclick="$(this).siblings('.pp-exc-ord-ul').toggle();">&nbsp;</a>
+                <input disabled="disabled" style="background-color: white" type="text" placeholder="Страна" data-country-id="" value="" class="order-exc-sel-country_id pp-exc-ord-d-inp m-placeholder">
+                <ul class="pp-exc-ord-ul" id="pp-exc-ord-countries" style="display: none;">
+                    <? foreach($countries as $_c): ?>
+                    <li class="pp-exc-ord-li"><a style="cursor:pointer;" data-country-id="<?=$_c['id']; ?>"><?=$_c['name']; ?></a></li>
+                    <? endforeach; ?>
+                </ul>
+            </div>
+            <div class="pp-exc-ord-sep">&nbsp;</div>
+            <div class="pp-exc-ord-d">
+                <a href="javascript:void(0);" class="pp-exc-ord-d-a" onclick="$(this).siblings('.pp-exc-ord-ul').toggle();">&nbsp;</a>
+                <input disabled="disabled" style="background-color: white" type="text" placeholder="Город или курорт" data-city-id="" value="" class="order-exc-sel-city_id pp-exc-ord-d-inp m-placeholder">
+                <ul class="pp-exc-ord-ul" id="pp-exc-ord-cities" style="display: none;">
+                </ul>
+            </div>
         </div>
-        <div class="pp-exc-ord-sep">&nbsp;</div>
-        <div class="pp-exc-ord-d">
-            <a href="javascript:void(0);" class="pp-exc-ord-d-a" onclick="$(this).siblings('.pp-exc-ord-ul').toggle();">&nbsp;</a>
-            <input disabled="disabled" style="background-color: white" type="text" placeholder="Город или курорт" data-city-id="" value="" class="order-exc-sel-city_id pp-exc-ord-d-inp m-placeholder">
-            <ul class="pp-exc-ord-ul" id="pp-exc-ord-cities" style="display: none;">
-
-                <li class="pp-exc-ord-li"><a style="cursor:pointer;" data-country-id="1" data-city-id="1">Москва</a></li>
-                <li class="pp-exc-ord-li"><a style="cursor:pointer;" data-country-id="1" data-city-id="2">Санкт-Петербург</a></li>
-
-            </ul>
-        </div>
+        <div id="pp-exc-ord-exc-name" data-exc-id="0"><b></b></div>
         <img src="/i/px.gif" height="10" alt="">
         <div class="pp-exc-ord-d">
             <a href="javascript:void(0);" class="pp-exc-ord-d-a">&nbsp;</a>

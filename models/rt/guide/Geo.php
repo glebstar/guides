@@ -21,6 +21,8 @@ class Geo extends ActiveRecord
     {
         $select = self::find()
             ->select([
+                'guide_city.id as id',
+                'guide_city.country as country_id',
                 'guide_city.name as name'
             ])
             ->leftJoin('dict.vw_dict_city as guide_city', 'rt_guide.vw_rt_guide_user_geo.city = guide_city.id')
@@ -39,7 +41,8 @@ class Geo extends ActiveRecord
     {
         $select = self::find()
             ->select([
-                'distinct(country.name) as name',
+                'distinct(country.id) as id',
+                'country.name as name',
                 'country.name_genitive as nameGenetive'
             ])
             ->leftJoin('dict.vw_dict_country as country', 'rt_guide.vw_rt_guide_user_geo.country = country.id')

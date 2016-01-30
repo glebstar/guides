@@ -131,8 +131,8 @@ $(document).ready(function(){
 	$('.favor').click(function(){
 		$(this).toggleClass('favor_active');
 		var txt=$('span',this).text();
-		if (txt=='Добавить в избранное') {$('span',this).text('В избранном');}
-		if (txt=='В избранном') {$('span',this).text('Добавить в избранное');}
+		if (txt=='пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ') {$('span',this).text('пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ');}
+		if (txt=='пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ') {$('span',this).text('пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ');}
 		return false;
 	});
 	$('span.spam').click(function(){
@@ -1144,12 +1144,12 @@ $(document).ready(function(){
 	}
 	
 	$('.link-recom').hover(
-		function(){$(this).not('.link-recom-active').addClass('link-recom-hover').html('Рекомендую!');},
-		function(){$(this).not('.link-recom-active').removeClass('link-recom-hover').html('Рекоменовать');}
+		function(){$(this).not('.link-recom-active').addClass('link-recom-hover').html('пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!');},
+		function(){$(this).not('.link-recom-active').removeClass('link-recom-hover').html('пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ');}
 	);
 	$('.link-recom').click(function(){
 		$('#pp-recom').overlay().css({left:getAbsolutePosition(this).x-206,top:getAbsolutePosition(this).y-26}).show();
-        $(this).addClass('link-recom-active').html('Рекомендую!');        
+        $(this).addClass('link-recom-active').html('пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!');        
 		return false;
 	});
 	$('.link-here').click(function(){
@@ -1192,10 +1192,10 @@ $(document).ready(function(){
 	$('.advice-tabs-table .advice-tabs-item a').click(function(){
 		$(this).parent().siblings().removeClass('advice-tabs-item-act').end().addClass('advice-tabs-item-act');
 		$('.advice-tabs-block').hide().eq($('.advice-tabs-table .advice-tabs-item a').index(this)).show();
-		/*if (!$(this).hasClass('advice-tabs-item-act') && $(this).text() == 'Советы') {
-			$(this).text('Последние советы').parent().siblings().find('a').text('Вопросы');
-		} else if (!$(this).hasClass('advice-tabs-item-act') && $(this).text() == 'Вопросы') {
-			$(this).text('Последние вопросы').parent().siblings().find('a').text('Советы');
+		/*if (!$(this).hasClass('advice-tabs-item-act') && $(this).text() == 'пїЅпїЅпїЅпїЅпїЅпїЅ') {
+			$(this).text('пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ').parent().siblings().find('a').text('пїЅпїЅпїЅпїЅпїЅпїЅпїЅ');
+		} else if (!$(this).hasClass('advice-tabs-item-act') && $(this).text() == 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅ') {
+			$(this).text('пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ').parent().siblings().find('a').text('пїЅпїЅпїЅпїЅпїЅпїЅ');
 		}*/
 		return false;
 	});
@@ -1246,6 +1246,15 @@ $(window).resize(function(){
 $(window).scroll(function () {
 	button_to_up();
 });
+
+$.fn.pVal = function(){
+	var $this = $(this),
+			val = $this.eq(0).val();
+	if(val == $this.attr('placeholder'))
+		return '';
+	else
+		return val;
+}
 
 
 

@@ -74,4 +74,20 @@ class Excursion extends ActiveRecord
 
         return $excursions;
     }
+
+    public static function getExcursion($id) {
+        $data = self::find()
+            ->where([
+                'id' => $id,
+                'guide_id' => User::getCurrentGuideId()
+            ])
+            ->asArray()
+            ->all();
+
+        if(!$data) {
+            return false;
+        }
+
+        return $data[0];
+    }
 }

@@ -51,7 +51,7 @@ $this->title = 'Индивидуальный гид ' . $guide['info_full']['rt_
         <a href="#" class="hotel_descr_ttl"><?=$exc['name']; ?></a>
         <? if ($exc['persons_qty_max']): ?> <p class="hotel_descr_place">Для от <?=$exc['persons_qty_min']; ?> до <?=$exc['persons_qty_max']; ?> человек</p><? endif; ?>
         <div class="hotel_price"><span class="red"><? if(!$exc['price']): ?>цена по запросу<? else: ?><? if($exc['is_price_from']): ?>от <? endif; ?><?=$exc['price'] . $exc['currency'] ?> <? if($exc['price_child'] == '-1'): ?>за группу<? else: ?>за одного человека<? endif; ?><? endif; ?></span></div>
-        <a href="#" class="hotel_descr_choose_link">Забронировать экскурсию</a>
+        <a href="javascript:void(0);" data-exc-id="<?=$exc['id']; ?>" data-exc-name="<?=$exc['name']; ?>" class="hotel_descr_choose_link show-order-exc-popup">Забронировать экскурсию</a>
     </div>
 </div>
 <? endforeach; ?>
