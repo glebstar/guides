@@ -1,6 +1,7 @@
 <?php
 namespace app\controllers;
 use app\models\rt\guide\User;
+use app\models\rt\community\Excursion;
 
 class ExcursionController extends WebAppController
 {
@@ -8,6 +9,7 @@ class ExcursionController extends WebAppController
     {
         return $this->render('index', [
             'guide' => User::getCurrentGuide(),
+            'excursions' => Excursion::getExcursions()
         ]);
     }
 
