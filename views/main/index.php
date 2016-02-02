@@ -5,7 +5,6 @@ use yii\helpers\Html;
 use app\models\rt\Photo;
 use app\assets\MainAsset;
 use app\components\widgets\modal\Message;
-use app\components\widgets\modal\OrderExc;
 
 MainAsset::register($this);
 
@@ -71,4 +70,3 @@ $this->title = 'Индивидуальный гид ' . $guide['info_full']['rt_
 <div class="hotel-site-pics-bot f14"><a class="bold red f12" href="#">Все фотографии гида</a> &rarr;
 
 <?=Message::widget(); ?>
-<?=OrderExc::widget(); ?>

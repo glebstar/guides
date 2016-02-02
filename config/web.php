@@ -8,6 +8,7 @@ if (file_exists(__DIR__ . '/params.local.php')) {
 }
 
 $config = [
+    'language' => 'ru-RU',
     'defaultRoute' => 'main',
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
@@ -49,6 +50,15 @@ $config = [
                 ],
             ],
         ],
+
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource'
+                ],
+            ],
+        ],
+
         'db' => require(__DIR__ . '/db.php'),
     ],
     'params' => array_merge($params, $paramsLocal),

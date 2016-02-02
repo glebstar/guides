@@ -23,9 +23,9 @@ class LeftMenu extends Widget
             'items' => [
                 ['name' => 'Главная', 'url' => '/'],
                 ['name' => 'Обо мне', 'url' => '/about'],
-                ['name' => 'Экскурсии', 'url' => '#'],
-                ['name' => 'Услуги и цены', 'url' => '#'],
-                ['name' => 'Отправить заявку', 'url' => '#'],
+                ['name' => 'Экскурсии', 'url' => '/excursion'],
+                ['name' => 'Услуги и цены', 'url' => '/service'],
+                ['name' => 'Отправить заявку', 'url' => 'javascript:void(0);', 'class' => 'show-order-exc-popup'],
                 ['name' => 'Контактная инфа', 'url' => '#'],
                 ['name' => 'Отзывы о работе гида', 'url' => '#']
             ]

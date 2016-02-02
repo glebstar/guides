@@ -9,6 +9,7 @@ use app\components\widgets\menu\LeftMenu;
 use app\components\widgets\Header;
 use app\components\widgets\Footer;
 use app\components\widgets\Right;
+use app\components\widgets\modal\OrderExc;
 
 AppAsset::register($this);
 ?>
@@ -73,6 +74,7 @@ AppAsset::register($this);
 
 
 <!-- popups -->
+<?=OrderExc::widget(); ?>
 <!-- /popups -->
 
 

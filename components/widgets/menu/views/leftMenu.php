@@ -14,7 +14,7 @@
                     $class = '';
                 }
                 ?>
-                <li class="side-nav-li"><a href="<?=$subItem['url']; ?>" class="side-nav-li-a <?=$class; ?>"><?=$subItem['name']; ?></a></li>
+                <li class="side-nav-li"><a href="<?=$subItem['url']; ?>" class="side-nav-li-a <?=$class; ?><? if(isset($subItem['class'])): ?> <?=$subItem['class']; ?><? endif; ?>"><?=$subItem['name']; ?></a></li>
             <? endforeach; ?>
         <? endforeach; ?>
     </ul>

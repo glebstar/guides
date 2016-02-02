@@ -18,15 +18,9 @@ class Country extends ActiveRecord
     }
 
     public static function getCountry($id) {
-        $data = self::find()
+        return self::find()
             ->where(['id' => $id])
             ->asArray()
-            ->all();
-
-        if(!$data) {
-            return false;
-        }
-
-        return $data[0];
+            ->one();
     }
 }

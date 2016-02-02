@@ -35,4 +35,10 @@ $(document).ready(function(){
 
         return false;
     });
+
+    $('.show-message-popup').click(function(){
+        $('#pp-message').show().centering();
+        $('.pp-mesage-text', $('#pp-message')).val('').focus();
+        return false;
+    });
 });
